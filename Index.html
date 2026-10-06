@@ -1,190 +1,229 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Torneo Región Sur 2026</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Torneo Región Sur 2026</title>
 
-<style>
-* {
-  box-sizing: border-box;
-}
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f2f4f7;
+      color: #222;
+    }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f2f4f7;
-  color: #222;
-}
+    header {
+      background: #14532d;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
 
-header {
-  background: #123c69;
-  color: white;
-  text-align: center;
-  padding: 30px 15px;
-}
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
 
-header h1 {
-  margin: 0;
-  font-size: 32px;
-}
+    header p {
+      margin: 8px 0 0;
+      font-size: 18px;
+    }
 
-header p {
-  margin: 8px 0 0;
-  font-size: 18px;
-}
+    .contenedor {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
 
-nav {
-  background: white;
-  padding: 12px;
-  text-align: center;
-  position: sticky;
-  top: 0;
-}
+    .tarjeta {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
 
-nav a {
-  color: #123c69;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 8px;
-}
+    h2 {
+      color: #14532d;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 8px;
+    }
 
-main {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
 
-section {
-  background: white;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-}
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
 
-h2 {
-  color: #123c69;
-}
+    th {
+      background: #14532d;
+      color: white;
+    }
 
-.equipos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 10px;
-}
+    tr:nth-child(even) {
+      background: #f7f7f7;
+    }
 
-.equipo {
-  background: #e9f1f8;
-  padding: 15px;
-  border-radius: 8px;
-  text-align: center;
-  font-weight: bold;
-}
+    .equipos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      margin-top: 15px;
+    }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 14px;
-}
+    .equipo {
+      background: #e8f5e9;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+    }
 
-th, td {
-  padding: 10px 5px;
-  border-bottom: 1px solid #ddd;
-  text-align: center;
-}
-
-th {
-  background: #123c69;
-  color: white;
-}
-
-footer {
-  text-align: center;
-  padding: 25px;
-  background: #123c69;
-  color: white;
-}
-
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 25px;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 5px;
-  }
-
-  table {
-    font-size: 12px;
-  }
-}
-</style>
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>🏆 Torneo Región Sur</h1>
-  <p>Sierra Colorada · Temporada 2026</p>
-</header>
+  <header>
+    <h1>🏆 Torneo Región Sur</h1>
+    <p>Región Sierra Colorada • Temporada 2026</p>
+  </header>
 
-<nav>
-  <a href="#equipos">Equipos</a>
-  <a href="#tabla">Tabla</a>
-  <a href="#partidos">Partidos</a>
-</nav>
+  <div class="contenedor">
 
-<main>
+    <div class="tarjeta">
+      <h2>📋 Información del torneo</h2>
+      <p><strong>Formato:</strong> Todos contra todos</p>
+      <p><strong>Temporada:</strong> 2026</p>
+      <p><strong>Región:</strong> Sierra Colorada</p>
+    </div>
 
-<section id="equipos">
-  <h2>⚽ Equipos participantes</h2>
+    <div class="tarjeta">
+      <h2>⚽ Equipos participantes</h2>
 
-  <div class="equipos">
-    <div class="equipo">Equipo 1</div>
-    <div class="equipo">Equipo 2</div>
-    <div class="equipo">Equipo 3</div>
-    <div class="equipo">Equipo 4</div>
-    <div class="equipo">Equipo 5</div>
-    <div class="equipo">Equipo 6</div>
-    <div class="equipo">Equipo 7</div>
+      <div class="equipos">
+        <div class="equipo">Equipo 1</div>
+        <div class="equipo">Equipo 2</div>
+        <div class="equipo">Equipo 3</div>
+        <div class="equipo">Equipo 4</div>
+        <div class="equipo">Equipo 5</div>
+        <div class="equipo">Equipo 6</div>
+        <div class="equipo">Equipo 7</div>
+      </div>
+    </div>
+
+    <div class="tarjeta">
+      <h2>📊 Tabla de posiciones</h2>
+
+      <table>
+        <tr>
+          <th>Pos.</th>
+          <th>Equipo</th>
+          <th>PJ</th>
+          <th>PG</th>
+          <th>PE</th>
+          <th>PP</th>
+          <th>Pts.</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>Equipo 1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Equipo 2</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Equipo 3</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>Equipo 4</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td>Equipo 5</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr>
+          <td>6</td>
+          <td>Equipo 6</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+
+        <tr>
+          <td>7</td>
+          <td>Equipo 7</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="tarjeta">
+      <h2>🗓️ Próximos partidos</h2>
+
+      <p><strong>Equipo 1</strong> vs <strong>Equipo 2</strong></p>
+      <p><strong>Equipo 3</strong> vs <strong>Equipo 4</strong></p>
+      <p><strong>Equipo 5</strong> vs <strong>Equipo 6</strong></p>
+      <p><strong>Equipo 7</strong> — Fecha libre</p>
+    </div>
+
   </div>
-</section>
 
-<section id="tabla">
-  <h2>📊 Tabla de posiciones</h2>
-
-  <table>
-    <tr>
-      <th>#</th>
-      <th>Equipo</th>
-      <th>PTS</th>
-      <th>PJ</th>
-      <th>PG</th>
-      <th>PE</th>
-      <th>PP</th>
-    </tr>
-
-    <tr><td>1</td><td>Equipo 1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-    <tr><td>2</td><td>Equipo 2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-    <tr><td>3</td><td>Equipo 3</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-    <tr><td>4</td><td>Equipo 4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-    <tr><td>5</td><td>Equipo 5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-    <tr><td>6</td><td>Equipo 6</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-    <tr><td>7</td><td>Equipo 7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-  </table>
-</section>
-
-<section id="partidos">
-  <h2>📅 Partidos</h2>
-  <p>Los partidos y resultados se agregarán próximamente.</p>
-</section>
-
-</main>
-
-<footer>
-  Torneo Región Sur · Sierra Colorada · 2026
-</footer>
+  <footer>
+    Torneo Región Sur 2026
+  </footer>
 
 </body>
 </html>
